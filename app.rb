@@ -74,6 +74,7 @@ class Battle < Sinatra::Base
   post '/computer' do
     @game = $game
     @game.attack(@game.player_1, Player::DEFAULT_HP/2)
+    @game.attack((@game.player_2),2) if @game.poisoned_players.include?(@game.player_2)
     redirect '/computer'
   end
 

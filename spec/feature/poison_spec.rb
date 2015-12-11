@@ -36,6 +36,14 @@ describe 'User Stories' do
         click_button "OK"
         expect(page).to have_content('Jane: 49 HP')
       end
+      scenario 'Computer Player receives poison damage on attack' do
+        sign_in_and_play_computer
+        click_button "Poison!"
+        srand(1)
+        click_button "OK"
+        click_button "OK"
+        expect(page).to have_content('Computerised Player: 49 HP')
+      end
     end
   end
 end
