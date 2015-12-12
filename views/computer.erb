@@ -1,5 +1,12 @@
+<head>
+  <title>Attack Occurs</title>
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
 <%= @game.player_2.name %> has attacked <%= @game.player_1.name %>!</p>
 <p>
   <form action="/play" method="get">
   <input type="submit" value="OK">
 </form>
+
+<img id="fire" src="images/Attack.png" width="100px" height="100px">

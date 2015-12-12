@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+}
+
+#main_title {
+  font-family: cursive;
+  color: rgba(100, 0, 0, 1);
+  font-size: 60px;
+}
+
+#right_cannon {
+  vertical-align: middle;
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#left_cannon {
+  vertical-align: middle;
+}
+
+#sub_heading{
+  padding-bottom: 2%;
+}
+
+.Sign-up {
+  background-color: rgba(200, 255, 200, 0.5);
+  width: 30%;
+  margin:auto;
+}
+
+#Sign-up_legend {
+  border-style: solid;
+  border-width: thin;
+}
+
+#submit {
+  background-color: rgba(200, 200, 255, 1);
+  border-radius: 40%
+}
+
+#submit:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+  border-radius: 40%
+}
+
+.decision{
+  margin:auto;
+  width: 20%;
+}
+
+#attack_button{
+  background-color: rgba(255, 200, 200, 1);
+  border-radius: 40%;
+}
+
+#attack_button:hover {
+  background-color: rgba(255, 0, 0, 1);
+  border-radius: 40%;
+}
+
+#paralyse_button{
+  background-color: rgba(191, 184, 169, 1);
+  border-radius: 40%;
+}
+
+#paralyse_button:hover{
+  background-color: rgba(150, 100, 30, 1);
+  border-radius: 40%;
+}
+
+#poison_button{
+  background-color: rgba(180, 240, 170, 1);
+  border-radius: 40%;
+}
+
+#poison_button:hover{
+  background-color: rgba(50, 200, 30, 1);
+  border-radius: 40%
+}
+
+.decision li{
+  display:inline-block;
+  float: left
+}

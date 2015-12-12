@@ -1,3 +1,8 @@
+<head>
+  <link rel="stylesheet" href="/css/stylesheet.css" type="text/css">
+  <title>Paralysis attack occurs</title>
+</head>
+
 <% if @game.current_turn == @game.player_1 %>
   <p><%= @game.player_1.name %> has paralysis attacked <%= @game.player_2.name %>!</p>
 <% else %>
@@ -23,3 +28,5 @@
 </form>
 
 <%end%>
+
+<img id="hammer" src="images/paralyse.png" width="100px" height="100px">

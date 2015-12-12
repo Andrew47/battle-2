@@ -1,17 +1,39 @@
-<h1><%= @game.player_1.name%> vs <%= @game.player_2.name %></h1>
-<h2>It's <%= @game.current_turn.name %>'s turn.</h2>
-<h3> <%= @game.player_1.name%>: <%= @game.player_1.hp %> HP </h3>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Action Decision</title>
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
 
-<h3> <%= @game.player_2.name %>: <%= @game.player_2.hp %> HP</h3>
+<body>
 
-<form action="/attack" method="post">
-  <input type="submit" value="Attack!">
-</form>
+<header>
+<h2><%= @game.player_1.name%> vs <%= @game.player_2.name %></h2>
+<p><strong>It's <%= @game.current_turn.name %>'s turn.</strong></p>
+</header>
 
-<form action="/paralyse" method="post">
-  <input type="submit" value="Paralyse!">
-</form>
+<section id="stats">
+    <p><%= @game.player_1.name%>: <%= @game.player_1.hp %> HP </p>
+    <p><%= @game.player_2.name %>: <%= @game.player_2.hp %> HP </p>
+</section>
 
-<form action="/poison" method="post">
-  <input type="submit" value="Poison!">
-</form>
+<div class="decision">
+  <ul>
+<li><form action="/attack" method="post">
+  <input id="attack_button" type="submit" value="Attack!">
+  </form></li>
+
+  <li><form  action="/paralyse" method="post">
+  <input id="paralyse_button" type="submit" value="Paralyse!">
+</form></li>
+
+<li><form action="/poison" method="post">
+  <input id="poison_button" type="submit" value="Poison!">
+</form></li>
+</ul>
+
+</div>
+
+</body>
+
+</html>

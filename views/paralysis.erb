@@ -1,8 +1,15 @@
+<head>
+  <title>Paralysis</title>
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<br>
+
 <% if @game.current_turn == @game.player_1 %>
   <h1> <%= @game.player_2.name %> is paralysed  </h1>
 <% else %>
   <h1> <%= @game.player_1.name %> is paralysed  </h1>
 <% end %>
+<br><br>
 
 <form action="/play" method="get">
   <input type="submit" value="OK">
