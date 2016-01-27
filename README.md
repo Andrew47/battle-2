@@ -1,20 +1,30 @@
 Battle Challenge
 ==================
 
-Author: Emma Beynon
+This is a solution to the Makers Academy's [Battle Challenge](https://github.com/makersacademy/course/blob/master/intro_to_the_web/00_challenge_map.md).
 
-Github: https://github.com/emmabeynon
+This uses a test-driven approach with both unit tests using [RSpec](http://rspec.info) and
+feature tests using [Capybara](https://github.com/jnicklas/capybara). The aim is to create a
+[Sinatra](http://www.sinatrarb.com) web application.
 
-Email: emma.beynon@gmail.com
+##Installation
+Clone the repository and change into the directory:
 
-This is my submission for the Makers Academy Week 3 Challenge: https://github.com/makersacademy/course/blob/master/intro_to_the_web/17_getting_started_with_battle.md
+```
+$ git clone git@github.com:Andrew47/battle-challenge.git
+$ cd battle-challenge
+```
 
-Overview
----------
-This challenge involved writing a battle programme using my understanding of HTTP, response-request mechanisms, Sinatra and Capybara.
+##Using the program
+Run `ruby app.rb` and click the following link: [http://localhost:4567](http://localhost:4567).
+The home page is as follows:
+![alt "home page"](/public/images/home_page.png)
 
-User Stories
-------------
+Type the name of player 1 and 2. Choose whether Player 2 is a computer. Then click 'Submit'.
+
+Then you can choose to attack (which is more likely to deal a higher damage), paralyse (which could lead the opponent to miss a turn), or poision (which leads the opponent to lose damage over time).
+
+## User Stories
 ```
 As two Players,
 So we can play a personalised game of Battle,
@@ -53,13 +63,7 @@ So I can Lose a game of Battle,
 I want to see a 'Lose' message if I reach 0HP first
 ```
 
-Instructions
-------------
-1. Fork this repo and clone to your local machine.
-
-Approach
----------
-
-Further Work
--------------
-Complete the extended user stories. 
+##Contributors
+* [Andrew Burnie](https://github.com/Andrew47)
+* [Emma Beynon](https://github.com/emmabeynon)
+* [Kirk Smith](https://github.com/SmithKirk)
